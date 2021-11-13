@@ -10,6 +10,10 @@ import "fmt"
 
 func main() {
 	C.helloworld()
-	num := C.add(10, 20)
-	fmt.Println("C.add result: ", num)
+	addres := C.add(10, 20)
+	fmt.Println("C.add result: ", addres)
+	divres := C.div(10, 20)
+	fmt.Println("C.add result: ", divres)
+	modres := C.mod(10, 20)
+	fmt.Println("C.add result: ", modres)
 }
